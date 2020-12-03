@@ -9,12 +9,30 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
 
-    <title>Movies API</title>
+    <title>Cities API</title>
 </head>
 
 <body>
     <div class="container my-5 text-center">
-        <button class="btn btn-danger w-100" onclick="traer()">Obtener</button>
+        <div class="alert alert-warning" role="alert">
+            Simple App que permite realizar busquedas por Ciudades, Estado y/o Poblacion consumiendo Fake API.
+        </div>
+        <div class="card">
+            <div class="card-body">
+                Ana Miguelina Ozuna Lugo - 20175076
+            </div>
+        </div>
+        <br>
+        <form class="search-form">
+            <button class="btn btn-success w-100" onclick="traer()" disabled>Ciudad, Estado, Población</button>
+            <input type="text" class="search form-control mr-sm-2" placeholder="Buscar">
+            <br>
+            <ul class="list-group options">
+                <li class="list-group-item">Mostrar coincidencias</li>
+                <li class="list-group-item"></li>
+            </ul>
+        </form>
+
         <div class="mt-5" id="contenido">
 
         </div>
